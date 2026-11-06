@@ -1,0 +1,160 @@
+<svg width="1100" height="520" viewBox="0 0 1100 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="taxBg" x1="0" y1="0" x2="1100" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="100%" stop-color="#070a13" />
+    </linearGradient>
+    <pattern id="taxGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.8" stroke-opacity="0.4" />
+    </pattern>
+    <filter id="taxShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <rect width="1100" height="520" fill="url(#taxBg)" rx="12" />
+  <rect width="1100" height="520" fill="url(#taxGrid)" rx="12" />
+  <rect width="1098" height="518" x="1" y="1" rx="11" stroke="#334155" stroke-width="1" stroke-opacity="0.6" fill="none" />
+
+  <!-- Header -->
+  <g transform="translate(50, 42)">
+    <text x="0" y="0" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">DESIGN PATTERN TAXONOMY</text>
+    <text x="0" y="32" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="800">The Three Architectural Pillars</text>
+    <text x="0" y="56" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14">Categorized by purpose, responsibility, and object interaction dynamics.</text>
+  </g>
+
+  <!-- Pillar 1: Creational (x=50, y=130, w=310, h=340) -->
+  <g transform="translate(50, 130)" filter="url(#taxShadow)">
+    <rect width="310" height="340" rx="10" fill="#0f172a" stroke="#0284c7" stroke-width="1.5" />
+    <rect width="310" height="42" rx="10" fill="#0369a1" fill-opacity="0.25" />
+    <line x1="0" y1="42" x2="310" y2="42" stroke="#0284c7" stroke-width="1" stroke-opacity="0.5" />
+    <circle cx="24" cy="21" r="5" fill="#38bdf8" />
+    <text x="38" y="26" fill="#e0f2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700">Creational Patterns</text>
+
+    <!-- Description -->
+    <text x="20" y="68" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Mechanism for object instantiation,</text>
+    <text x="20" y="86" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">decoupling client from concrete classes.</text>
+
+    <!-- Pattern Badges -->
+    <g transform="translate(18, 108)">
+      <rect width="274" height="30" rx="6" fill="#1e293b" />
+      <text x="14" y="20" fill="#f1f5f9" font-family="monospace" font-size="12" font-weight="600">Simple Factory</text>
+      <text x="256" y="20" fill="#38bdf8" font-family="monospace" font-size="11" text-anchor="end">Creational</text>
+    </g>
+    <g transform="translate(18, 144)">
+      <rect width="274" height="30" rx="6" fill="#1e293b" />
+      <text x="14" y="20" fill="#f1f5f9" font-family="monospace" font-size="12" font-weight="600">Factory Method</text>
+      <text x="256" y="20" fill="#38bdf8" font-family="monospace" font-size="11" text-anchor="end">GoF</text>
+    </g>
+    <g transform="translate(18, 180)">
+      <rect width="274" height="30" rx="6" fill="#1e293b" />
+      <text x="14" y="20" fill="#f1f5f9" font-family="monospace" font-size="12" font-weight="600">Abstract Factory</text>
+      <text x="256" y="20" fill="#38bdf8" font-family="monospace" font-size="11" text-anchor="end">GoF</text>
+    </g>
+    <g transform="translate(18, 216)">
+      <rect width="274" height="30" rx="6" fill="#1e293b" />
+      <text x="14" y="20" fill="#f1f5f9" font-family="monospace" font-size="12" font-weight="600">Builder</text>
+      <text x="256" y="20" fill="#38bdf8" font-family="monospace" font-size="11" text-anchor="end">GoF</text>
+    </g>
+    <g transform="translate(18, 252)">
+      <rect width="274" height="30" rx="6" fill="#1e293b" />
+      <text x="14" y="20" fill="#f1f5f9" font-family="monospace" font-size="12" font-weight="600">Prototype</text>
+      <text x="256" y="20" fill="#38bdf8" font-family="monospace" font-size="11" text-anchor="end">GoF</text>
+    </g>
+    <g transform="translate(18, 288)">
+      <rect width="274" height="30" rx="6" fill="#1e293b" />
+      <text x="14" y="20" fill="#f1f5f9" font-family="monospace" font-size="12" font-weight="600">Singleton</text>
+      <text x="256" y="20" fill="#38bdf8" font-family="monospace" font-size="11" text-anchor="end">GoF</text>
+    </g>
+  </g>
+
+  <!-- Pillar 2: Structural (x=395, y=130, w=310, h=340) -->
+  <g transform="translate(395, 130)" filter="url(#taxShadow)">
+    <rect width="310" height="340" rx="10" fill="#0f172a" stroke="#6366f1" stroke-width="1.5" />
+    <rect width="310" height="42" rx="10" fill="#4f46e5" fill-opacity="0.25" />
+    <line x1="0" y1="42" x2="310" y2="42" stroke="#6366f1" stroke-width="1" stroke-opacity="0.5" />
+    <circle cx="24" cy="21" r="5" fill="#818cf8" />
+    <text x="38" y="26" fill="#e0e7ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700">Structural Patterns</text>
+
+    <!-- Description -->
+    <text x="20" y="68" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Composition of classes and objects into</text>
+    <text x="20" y="86" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">larger, flexible and decoupled structures.</text>
+
+    <!-- Pattern Badges -->
+    <g transform="translate(18, 108)">
+      <rect width="274" height="26" rx="5" fill="#1e293b" />
+      <text x="12" y="17" fill="#f1f5f9" font-family="monospace" font-size="11.5" font-weight="600">Adapter &amp; Bridge</text>
+      <text x="258" y="17" fill="#818cf8" font-family="monospace" font-size="10" text-anchor="end">Interface / Hierarchy</text>
+    </g>
+    <g transform="translate(18, 140)">
+      <rect width="274" height="26" rx="5" fill="#1e293b" />
+      <text x="12" y="17" fill="#f1f5f9" font-family="monospace" font-size="11.5" font-weight="600">Composite</text>
+      <text x="258" y="17" fill="#818cf8" font-family="monospace" font-size="10" text-anchor="end">Tree Hierarchies</text>
+    </g>
+    <g transform="translate(18, 172)">
+      <rect width="274" height="26" rx="5" fill="#1e293b" />
+      <text x="12" y="17" fill="#f1f5f9" font-family="monospace" font-size="11.5" font-weight="600">Decorator</text>
+      <text x="258" y="17" fill="#818cf8" font-family="monospace" font-size="10" text-anchor="end">Dynamic Extension</text>
+    </g>
+    <g transform="translate(18, 204)">
+      <rect width="274" height="26" rx="5" fill="#1e293b" />
+      <text x="12" y="17" fill="#f1f5f9" font-family="monospace" font-size="11.5" font-weight="600">Facade</text>
+      <text x="258" y="17" fill="#818cf8" font-family="monospace" font-size="10" text-anchor="end">Simplified Interface</text>
+    </g>
+    <g transform="translate(18, 236)">
+      <rect width="274" height="26" rx="5" fill="#1e293b" />
+      <text x="12" y="17" fill="#f1f5f9" font-family="monospace" font-size="11.5" font-weight="600">Flyweight</text>
+      <text x="258" y="17" fill="#818cf8" font-family="monospace" font-size="10" text-anchor="end">Memory Optimization</text>
+    </g>
+    <g transform="translate(18, 268)">
+      <rect width="274" height="26" rx="5" fill="#1e293b" />
+      <text x="12" y="17" fill="#f1f5f9" font-family="monospace" font-size="11.5" font-weight="600">Proxy</text>
+      <text x="258" y="17" fill="#818cf8" font-family="monospace" font-size="10" text-anchor="end">Surrogate &amp; Access</text>
+    </g>
+  </g>
+
+  <!-- Pillar 3: Behavioral (x=740, y=130, w=310, h=340) -->
+  <g transform="translate(740, 130)" filter="url(#taxShadow)">
+    <rect width="310" height="340" rx="10" fill="#0f172a" stroke="#059669" stroke-width="1.5" />
+    <rect width="310" height="42" rx="10" fill="#047857" fill-opacity="0.25" />
+    <line x1="0" y1="42" x2="310" y2="42" stroke="#059669" stroke-width="1" stroke-opacity="0.5" />
+    <circle cx="24" cy="21" r="5" fill="#34d399" />
+    <text x="38" y="26" fill="#d1fae5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700">Behavioral Patterns</text>
+
+    <!-- Description -->
+    <text x="20" y="68" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Communication protocols, algorithms,</text>
+    <text x="20" y="86" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">and state distribution among components.</text>
+
+    <!-- Pattern Badges -->
+    <g transform="translate(18, 108)">
+      <rect width="274" height="26" rx="5" fill="#1e293b" />
+      <text x="12" y="17" fill="#f1f5f9" font-family="monospace" font-size="11.5" font-weight="600">Chain of Resp. &amp; Command</text>
+      <text x="258" y="17" fill="#34d399" font-family="monospace" font-size="10" text-anchor="end">Execution</text>
+    </g>
+    <g transform="translate(18, 140)">
+      <rect width="274" height="26" rx="5" fill="#1e293b" />
+      <text x="12" y="17" fill="#f1f5f9" font-family="monospace" font-size="11.5" font-weight="600">Iterator &amp; Mediator</text>
+      <text x="258" y="17" fill="#34d399" font-family="monospace" font-size="10" text-anchor="end">Traversal &amp; Hub</text>
+    </g>
+    <g transform="translate(18, 172)">
+      <rect width="274" height="26" rx="5" fill="#1e293b" />
+      <text x="12" y="17" fill="#f1f5f9" font-family="monospace" font-size="11.5" font-weight="600">Observer &amp; Memento</text>
+      <text x="258" y="17" fill="#34d399" font-family="monospace" font-size="10" text-anchor="end">Pub/Sub &amp; Undo</text>
+    </g>
+    <g transform="translate(18, 204)">
+      <rect width="274" height="26" rx="5" fill="#1e293b" />
+      <text x="12" y="17" fill="#f1f5f9" font-family="monospace" font-size="11.5" font-weight="600">Strategy</text>
+      <text x="258" y="17" fill="#34d399" font-family="monospace" font-size="10" text-anchor="end">Interchangeable Algo</text>
+    </g>
+    <g transform="translate(18, 236)">
+      <rect width="274" height="26" rx="5" fill="#1e293b" />
+      <text x="12" y="17" fill="#f1f5f9" font-family="monospace" font-size="11.5" font-weight="600">State</text>
+      <text x="258" y="17" fill="#34d399" font-family="monospace" font-size="10" text-anchor="end">State-Driven Behavior</text>
+    </g>
+    <g transform="translate(18, 268)">
+      <rect width="274" height="26" rx="5" fill="#1e293b" />
+      <text x="12" y="17" fill="#f1f5f9" font-family="monospace" font-size="11.5" font-weight="600">Template Method &amp; Visitor</text>
+      <text x="258" y="17" fill="#34d399" font-family="monospace" font-size="10" text-anchor="end">Algorithm Skeleton</text>
+    </g>
+  </g>
+</svg>

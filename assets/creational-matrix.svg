@@ -1,0 +1,83 @@
+<svg width="1000" height="480" viewBox="0 0 1000 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cBg" x1="0" y1="0" x2="1000" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#070d18" />
+      <stop offset="100%" stop-color="#0c1524" />
+    </linearGradient>
+    <pattern id="cGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#334155" fill-opacity="0.3" />
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="480" fill="url(#cBg)" rx="12" />
+  <rect width="1000" height="480" fill="url(#cGrid)" rx="12" />
+  <rect width="998" height="478" x="1" y="1" rx="11" stroke="#1e293b" stroke-width="1.5" fill="none" />
+
+  <!-- Header -->
+  <g transform="translate(40, 36)">
+    <text x="0" y="0" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="1">CREATIONAL BLUEPRINT</text>
+    <text x="0" y="28" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800">Creational Patterns Architectural Matrix</text>
+    <text x="0" y="50" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5">Choosing the optimal instantiation pattern based on construction complexity and coupling requirements.</text>
+  </g>
+
+  <!-- Table Grid Layout -->
+  <!-- Headers -->
+  <g transform="translate(40, 110)">
+    <rect width="920" height="34" rx="6" fill="#1e293b" />
+    <text x="20" y="22" fill="#94a3b8" font-family="monospace" font-size="12" font-weight="700">PATTERN</text>
+    <text x="180" y="22" fill="#94a3b8" font-family="monospace" font-size="12" font-weight="700">PRIMARY RESPONSIBILITY</text>
+    <text x="470" y="22" fill="#94a3b8" font-family="monospace" font-size="12" font-weight="700">WHEN TO APPLY</text>
+    <text x="760" y="22" fill="#94a3b8" font-family="monospace" font-size="12" font-weight="700">CORE BENEFIT</text>
+  </g>
+
+  <!-- Row 1: Simple Factory -->
+  <g transform="translate(40, 154)">
+    <rect width="920" height="48" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="20" y="28" fill="#38bdf8" font-family="monospace" font-size="13" font-weight="700">Simple Factory</text>
+    <text x="180" y="28" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">Centralized creation helper</text>
+    <text x="470" y="28" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5">Object setup logic repeated across code</text>
+    <text x="760" y="28" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5">Centralized instantiation</text>
+  </g>
+
+  <!-- Row 2: Factory Method -->
+  <g transform="translate(40, 208)">
+    <rect width="920" height="48" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="20" y="28" fill="#38bdf8" font-family="monospace" font-size="13" font-weight="700">Factory Method</text>
+    <text x="180" y="28" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">Delegates instantiation to subclasses</text>
+    <text x="470" y="28" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5">Frameworks needing unknown subtype creation</text>
+    <text x="760" y="28" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5">Open/Closed compliant</text>
+  </g>
+
+  <!-- Row 3: Abstract Factory -->
+  <g transform="translate(40, 262)">
+    <rect width="920" height="48" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="20" y="28" fill="#38bdf8" font-family="monospace" font-size="13" font-weight="700">Abstract Factory</text>
+    <text x="180" y="28" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">Creates families of related objects</text>
+    <text x="470" y="28" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5">Multiple compatible components (e.g. UI suites)</text>
+    <text x="760" y="28" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5">Enforces product consistency</text>
+  </g>
+
+  <!-- Row 4: Builder -->
+  <g transform="translate(40, 316)">
+    <rect width="920" height="48" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="20" y="28" fill="#38bdf8" font-family="monospace" font-size="13" font-weight="700">Builder</text>
+    <text x="180" y="28" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">Step-by-step assembly of complex types</text>
+    <text x="470" y="28" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5">Telescoping constructors (too many params)</text>
+    <text x="760" y="28" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5">Fluent, readable configuration</text>
+  </g>
+
+  <!-- Row 5: Prototype & Singleton -->
+  <g transform="translate(40, 370)">
+    <rect width="920" height="48" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="20" y="28" fill="#38bdf8" font-family="monospace" font-size="13" font-weight="700">Prototype / Singleton</text>
+    <text x="180" y="28" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">Clone existing object / Single shared instance</text>
+    <text x="470" y="28" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5">Expensive instantiation or strict single coordinator</text>
+    <text x="760" y="28" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5">Memory &amp; resource control</text>
+  </g>
+
+  <!-- Bottom Tip -->
+  <g transform="translate(40, 436)">
+    <circle cx="6" cy="6" r="3" fill="#38bdf8" />
+    <text x="16" y="10" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Tip: Start simple with direct constructors or Simple Factory; refactor to Factory Method / Abstract Factory only when variation emerges.</text>
+  </g>
+</svg>

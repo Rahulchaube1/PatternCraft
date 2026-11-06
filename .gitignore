@@ -1,0 +1,25 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor & IDE directories
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary & runtime files
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+vendor/
+composer.lock
+
+# Build & log artifacts
+*.log
+dist/
+tmp/

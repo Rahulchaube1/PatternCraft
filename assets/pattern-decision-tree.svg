@@ -1,0 +1,137 @@
+<svg width="1050" height="520" viewBox="0 0 1050 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dtBg" x1="0" y1="0" x2="1050" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+    <pattern id="dtGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.7" stroke-opacity="0.3" />
+    </pattern>
+  </defs>
+
+  <rect width="1050" height="520" fill="url(#dtBg)" rx="12" />
+  <rect width="1050" height="520" fill="url(#dtGrid)" rx="12" />
+  <rect width="1048" height="518" x="1" y="1" rx="11" stroke="#334155" stroke-width="1.2" stroke-opacity="0.5" fill="none" />
+
+  <!-- Header -->
+  <g transform="translate(40, 36)">
+    <text x="0" y="0" fill="#a855f7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="1">DECISION ARCHITECTURE</text>
+    <text x="0" y="28" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800">Architect's Pattern Selection Guide</text>
+    <text x="0" y="50" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">Evaluate your engineering challenge to identify the appropriate design pattern.</text>
+  </g>
+
+  <!-- Problem Node 1: Object Creation -->
+  <g transform="translate(40, 115)">
+    <rect width="210" height="70" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="14" y="28" fill="#38bdf8" font-family="monospace" font-size="12" font-weight="700">PROBLEM: CREATION</text>
+    <text x="14" y="50" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">How should objects be created?</text>
+  </g>
+
+  <!-- Branches from Node 1 -->
+  <g transform="translate(290, 95)">
+    <!-- Sub 1 -->
+    <rect width="260" height="42" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="12" y="18" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Complex multi-step assembly</text>
+    <text x="12" y="32" fill="#38bdf8" font-family="monospace" font-size="12" font-weight="700">➔ Use Builder</text>
+
+    <!-- Sub 2 -->
+    <g transform="translate(0, 48)">
+      <rect width="260" height="42" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="12" y="18" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Families of related products</text>
+      <text x="12" y="32" fill="#38bdf8" font-family="monospace" font-size="12" font-weight="700">➔ Use Abstract Factory</text>
+    </g>
+  </g>
+
+  <!-- Problem Node 2: Structure & Adaptation -->
+  <g transform="translate(40, 245)">
+    <rect width="210" height="70" rx="8" fill="#1e293b" stroke="#818cf8" stroke-width="1.5" />
+    <text x="14" y="28" fill="#818cf8" font-family="monospace" font-size="12" font-weight="700">PROBLEM: STRUCTURE</text>
+    <text x="14" y="50" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">How do classes relate &amp; compose?</text>
+  </g>
+
+  <!-- Branches from Node 2 -->
+  <g transform="translate(290, 205)">
+    <!-- Sub 1 -->
+    <rect width="260" height="42" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="12" y="18" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Incompatible third-party interface</text>
+    <text x="12" y="32" fill="#818cf8" font-family="monospace" font-size="12" font-weight="700">➔ Use Adapter</text>
+
+    <!-- Sub 2 -->
+    <g transform="translate(0, 48)">
+      <rect width="260" height="42" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="12" y="18" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Add responsibilities dynamically</text>
+      <text x="12" y="32" fill="#818cf8" font-family="monospace" font-size="12" font-weight="700">➔ Use Decorator</text>
+    </g>
+
+    <!-- Sub 3 -->
+    <g transform="translate(0, 96)">
+      <rect width="260" height="42" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="12" y="18" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Complex subsystem simplified</text>
+      <text x="12" y="32" fill="#818cf8" font-family="monospace" font-size="12" font-weight="700">➔ Use Facade</text>
+    </g>
+  </g>
+
+  <!-- Problem Node 3: Behavior & Interaction -->
+  <g transform="translate(40, 395)">
+    <rect width="210" height="70" rx="8" fill="#1e293b" stroke="#34d399" stroke-width="1.5" />
+    <text x="14" y="28" fill="#34d399" font-family="monospace" font-size="12" font-weight="700">PROBLEM: BEHAVIOR</text>
+    <text x="14" y="50" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">How do objects interact &amp; communicate?</text>
+  </g>
+
+  <!-- Branches from Node 3 -->
+  <g transform="translate(290, 375)">
+    <!-- Sub 1 -->
+    <rect width="260" height="42" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="12" y="18" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">1-to-many event notification</text>
+    <text x="12" y="32" fill="#34d399" font-family="monospace" font-size="12" font-weight="700">➔ Use Observer</text>
+
+    <!-- Sub 2 -->
+    <g transform="translate(0, 48)">
+      <rect width="260" height="42" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="12" y="18" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Swap algorithms at runtime</text>
+      <text x="12" y="32" fill="#34d399" font-family="monospace" font-size="12" font-weight="700">➔ Use Strategy</text>
+    </g>
+  </g>
+
+  <!-- Connectors -->
+  <path d="M 250 150 L 290 116" stroke="#38bdf8" stroke-width="1.5" />
+  <path d="M 250 150 L 290 164" stroke="#38bdf8" stroke-width="1.5" />
+
+  <path d="M 250 280 L 290 226" stroke="#818cf8" stroke-width="1.5" />
+  <path d="M 250 280 L 290 274" stroke="#818cf8" stroke-width="1.5" />
+  <path d="M 250 280 L 290 322" stroke="#818cf8" stroke-width="1.5" />
+
+  <path d="M 250 430 L 290 396" stroke="#34d399" stroke-width="1.5" />
+  <path d="M 250 430 L 290 444" stroke="#34d399" stroke-width="1.5" />
+
+  <!-- Architectural Rules Box on Right -->
+  <g transform="translate(585, 95)">
+    <rect width="420" height="375" rx="10" fill="#0d1424" stroke="#1e293b" stroke-width="1.5" />
+    <rect width="420" height="38" rx="10" fill="#1e293b" fill-opacity="0.6" />
+    <text x="18" y="24" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">⚡ Core Architectural Heuristics</text>
+
+    <g transform="translate(18, 54)">
+      <text x="0" y="16" fill="#38bdf8" font-family="monospace" font-size="12" font-weight="700">1. Favor Composition over Inheritance</text>
+      <text x="0" y="34" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5">Inheritance locks designs into rigid compile-time hierarchies.</text>
+      <text x="0" y="50" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5">Composition enables dynamic runtime swaps (Strategy, Decorator).</text>
+    </g>
+
+    <g transform="translate(18, 126)">
+      <text x="0" y="16" fill="#818cf8" font-family="monospace" font-size="12" font-weight="700">2. Program to Interfaces, Not Implementations</text>
+      <text x="0" y="34" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5">Clients should depend on abstractions (DIP). Factories and</text>
+      <text x="0" y="50" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5">Dependency Injection containers resolve concrete classes.</text>
+    </g>
+
+    <g transform="translate(18, 198)">
+      <text x="0" y="16" fill="#34d399" font-family="monospace" font-size="12" font-weight="700">3. Resist Premature Pattern Application</text>
+      <text x="0" y="34" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5">Avoid over-engineering. Do not build an Abstract Factory if a</text>
+      <text x="0" y="50" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5">direct constructor suffices. Introduce patterns as complexity scales.</text>
+    </g>
+
+    <g transform="translate(18, 270)">
+      <text x="0" y="16" fill="#f59e0b" font-family="monospace" font-size="12" font-weight="700">4. Keep Abstractions Cohesive (ISP)</text>
+      <text x="0" y="34" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5">Smaller, focused interfaces are easier to decorate, adapt,</text>
+      <text x="0" y="50" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5">and mock in unit tests than monolithic interfaces.</text>
+    </g>
+  </g>
+</svg>
